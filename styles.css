@@ -12,8 +12,14 @@
   align-items: center;
   gap: 30px;
   padding-top: 20px;
-  background-color: rgb(139, 42, 195);
+  padding-bottom: 25px;
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
   border-radius: 0 0 30px 30px;
+  color: #fff;
 }
 
 .result-bubble {
@@ -21,16 +27,37 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
+  z-index: auto;
+}
+
+.result-text {
+  color: hsla(241, 100%, 89%, 0.9);
+}
+
+.result-num1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.of100 {
+  color: hsla(241, 100%, 89%, 0.8);
+}
+
+.great {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: -25px;
 }
 
 .score-desc {
   text-align: center;
-  width: 250px;
+  width: 300px;
   padding-bottom: 1rem;
+  color: hsla(222, 100%, 96%, 0.67);
 }
 
 /* BOTTOM SUMMARY SIDE */
